@@ -1,0 +1,110 @@
+{
+  "editor.mouseWheelZoom": true,
+  "keyboard.dispatch": "keyCode",
+  "vim.handleKeys": {
+    "<C-c": false,
+    "<C-b": false,
+    "<C-e>": false,
+    "<C-w>": false
+  },
+  "vim.hlsearch": true,
+  "editor.lineNumbers": "relative",
+  "explorer.confirmDelete": false,
+  "vim.easymotion": true,
+  "glassit.alpha": 255,
+  "editor.minimap.enabled": false,
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "editor.tokenColorCustomizations": {
+    "[Material Color]": {
+      "textMateRules": [
+        {
+          "scope": ["comment"],
+          "settings": {
+            "foreground": "#f7b7ff"
+          }
+        },
+        {
+          "scope": ["variable.parameter"],
+          "settings": {
+            "foreground": "#ce99ff"
+          }
+        }
+      ]
+    }
+  },
+  "workbench.colorCustomizations": {
+    "[Material Color]": {}
+  },
+  "workbench.editorAssociations": {
+    "*.html": "default"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "editor.formatOnSave": true,
+  "workbench.colorTheme": "Material Color",
+  "latex-workshop.latex.tools": [
+    // Compilation tools and commands
+    {
+        "name": "xelatex",
+        "command": "xelatex",
+        "args": [
+            "-synctex=1",
+            "-interaction=nonstopmode",
+            "-file-line-error",
+            "-pdf",
+            "%DOCFILE%"
+        ]
+    },
+    {
+        "name": "pdflatex",
+        "command": "pdflatex",
+        "args": [
+            "-synctex=1",
+            "-interaction=nonstopmode",
+            "-file-line-error",
+            "%DOCFILE%"
+        ]
+    },
+    {
+        "name": "bibtex",
+        "command": "bibtex",
+        "args": [
+            "%DOCFILE%"
+        ]
+    }
+  ],
+  "latex-workshop.latex.recipes": [
+    {
+        "name": "xelatex 🔃",
+        "tools": [
+            "xelatex"
+        ],
+    },
+    {
+        "name": "pdflatex 🔃",
+        "tools": [
+            "pdflatex"
+        ]
+    },
+    {
+        "name": "xelatex➞bibtex➞xelatex.2x 🔃",
+        "tools": [
+            "xelatex",
+            "bibtex",
+            "xelatex",
+            "xelatex"
+        ]
+    },
+    {
+        "name": "pdflatex➞bibtex➞pdflatex.2x 🔃",
+        "tools": [
+            "pdflatex",
+            "bibtex",
+            "pdflatex",
+            "pdflatex"
+        ]
+    }
+  ],
+  "security.workspace.trust.untrustedFiles": "open",
+}

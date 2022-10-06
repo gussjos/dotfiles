@@ -1,0 +1,51 @@
+session_name: fp
+windows:
+- focus: 'true'
+  layout: d25e,422x78,0,0,1
+  options:
+    automatic-rename: 'off'
+  panes:
+  - focus: 'true'
+    shell_command: python3.10
+  start_directory: /home/gussjo
+  window_name: zsh
+- layout: d260,422x78,0,0,3
+  options:
+    automatic-rename: 'off'
+  panes:
+  - focus: 'true'
+    shell_command: zsh
+  start_directory: /home/gussjo/stena-tmi/tmi-fuel-opt-tools/misc_tools
+  window_name: jupyter lab
+- layout: 695f,422x78,0,0,10
+  options:
+    automatic-rename: 'off'
+  panes:
+  - focus: 'true'
+    shell_command: zsh
+  start_directory: /home/gussjo/stena-tmi/tmi-fuel-opt-2
+  window_name: tmi-fuel-opt-2
+- layout: d261,422x78,0,0,4
+  options:
+    automatic-rename: 'off'
+  panes:
+  - focus: 'true'
+    shell_command: zsh
+  start_directory: /home/gussjo/stena-tmi/tmi-fuel-opt
+  window_name: tmi-fuel-opt
+- layout: d262,422x78,0,0,5
+  options:
+    automatic-rename: 'off'
+  panes:
+  - focus: 'true'
+    shell_command: zsh
+  start_directory: /home/gussjo/stena-tmi/tmi-fuel-opt-gui
+  window_name: tmi-fuel-opt-gui
+- layout: d264,422x78,0,0,7
+  options:
+    automatic-rename: 'off'
+  panes:
+  - focus: 'true'
+    shell_command: zsh
+  start_directory: /home/gussjo
+  window_name: opc
