@@ -13,8 +13,6 @@ def populate_dotfile(file, target):
     else:
         print(f"Cannot populate \"{file}\": does not exist in dotfiles repo. Be careful!")
 
-
-
 targets = {
     'bashrc': HOME + '.bashrc',
     'condarc': HOME + '.condarc',
