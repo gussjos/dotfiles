@@ -162,7 +162,7 @@ alias dlp="zsh ~/scripts/dlp.sh"
 alias dlpa="zsh ~/scripts/dlpa.sh"
 
 alias opc="zsh ~/scripts/openconnect.sh"
-alias mvw="zsh ~/scripts/mv_windows_on_startup.sh"
+alias mvw="zsh ~/shell-scripts/mv_windows_on_startup.sh"
 
 # Docker
 alias dpa="docker ps -a"

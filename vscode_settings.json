@@ -107,4 +107,8 @@
     }
   ],
   "security.workspace.trust.untrustedFiles": "open",
+  // "window.menuBarVisibility": "toggle",
+  "workbench.activityBar.visible": false,
+  "window.menuBarVisibility": "toggle",
+  "notebook.lineNumbers": "on",
 }
