@@ -23,8 +23,8 @@ targets = {
     'p10k.zsh': HOME + '.p10k.zsh',
     'tmux.conf': HOME + '.tmux.conf',
     'fp_tmuxp_session.yaml': HOME + '.config/tmuxp/fp.yaml',
-    'vscode_keybindings.json': HOME + '.config/Code/User/keybindings.json',
-    'vscode_settings.json': HOME + '.config/Code/User/settings.json',
+    #'vscode_keybindings.json': HOME + '.config/Code/User/keybindings.json',
+    #'vscode_settings.json': HOME + '.config/Code/User/settings.json',
 }
 
 for item in targets.items():
