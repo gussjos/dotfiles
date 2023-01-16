@@ -118,6 +118,7 @@ source ~/.profile
 #
 
 # CLI related
+alias oc="zsh ~/Downloads/oc/oc"
 alias cl="clear"
 alias l="exa --long"
 alias vzsh="vim ~/.zshrc"
@@ -155,6 +156,7 @@ tmux bind-key l resize-pane -R 10
 
 # Git related
 alias gau="ga -u"
+alias jlab="jupyter lab"
 
 alias ssync='bash ~/scripts/sync_ship_simulator_route.sh'
 
@@ -201,3 +203,6 @@ unset __conda_setup
 # <<< conda initialize <<<
 xrandr --output HDMI-0 --mode 3440x1440 --rate 100 
 conda activate stena
+#neofetch
+typeset -g POWERLEVEL9K_INSTANT_PROMPT=off
+#  working hyper version : 3.2.3 # 13 jan 2023

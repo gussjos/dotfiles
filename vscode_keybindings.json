@@ -341,10 +341,6 @@
         "command": "-workbench.action.splitEditor"
     },
     {
-        "key": "ctrl+s",
-        "command": "-workbench.action.files.save"
-    },
-    {
         "key": "ctrl+alt+5",
         "command": "workbench.action.splitEditorDown"
     },
@@ -439,5 +435,17 @@
         "key": "meta+enter",
         "command": "-notebook.cell.execute",
         "when": "notebookCellListFocused && notebookMissingKernelExtension && !notebookCellExecuting && notebookCellType == 'code' || notebookCellListFocused && !notebookCellExecuting && notebookCellType == 'code' && notebookKernelCount > 0"
+    },
+    {
+        "key": "ctrl+9",
+        "command": "selectForCompare"
+    },
+    {
+        "key": "ctrl+0",
+        "command": "compareSelected"
+    },
+    {
+        "key": "ctrl+0",
+        "command": "workbench.action.localHistory.compareWithSelected"
     }
 ]
