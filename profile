@@ -25,4 +25,3 @@ fi
 if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
-xrandr --output HDMI-0 --mode 3440x1440 --rate 100

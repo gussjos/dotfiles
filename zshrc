@@ -1,3 +1,4 @@
+# comment
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -84,7 +85,6 @@ plugins=(git
        	 kubectl
       	 docker
       	 zsh-z
-         zsh-256color
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -123,7 +123,7 @@ alias l="exa --long"
 alias vzsh="vim ~/.zshrc"
 
 alias dcup="docker-compose up"
-alias cat="batcat"
+#alias cat="batcat"
 alias rmk='zsh ~/scripts/kill_and_rm_docker_containers.sh'
 alias na='nautilus .'
 
@@ -199,5 +199,5 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
-xrandr --output HDMI-0 --mode 3440x1440 --rate 100 
-conda activate stena
+conda activate stena311
+typeset -g POWERLEVEL9K_INSTANT_PROMPT=off

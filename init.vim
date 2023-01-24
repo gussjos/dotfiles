@@ -1,27 +1,27 @@
 " Specify a directory for plugins
-call plug#begin('~/.vim/plugged')
+" call plug#begin('~/.vim/plugged')
 
 " These plugins are checked and are useful /Gustaf
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'scrooloose/nerdtree'
-Plug 'christoomey/vim-tmux-navigator'
-Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
-Plug 'airblade/vim-gitgutter'
+" Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Plug 'scrooloose/nerdtree'
+" Plug 'christoomey/vim-tmux-navigator'
+" Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+" Plug 'airblade/vim-gitgutter'
+" 
+" "Plug 'tsony-tsonev/nerdtree-git-plugin'
+" "Plug 'Xuyuanp/nerdtree-git-plugin'
+" "Plug 'ryanoasis/vim-devicons' // Not working
+" "
+" " Plug 'ctrlpvim/ctrlp.vim' " fuzzy find files
+" Plug 'scrooloose/nerdcommenter'
+" Plug 'marko-cerovac/material.nvim'
+" "Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
+" Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 
-"Plug 'tsony-tsonev/nerdtree-git-plugin'
-"Plug 'Xuyuanp/nerdtree-git-plugin'
-"Plug 'ryanoasis/vim-devicons' // Not working
-"
-" Plug 'ctrlpvim/ctrlp.vim' " fuzzy find files
-Plug 'scrooloose/nerdcommenter'
-Plug 'marko-cerovac/material.nvim'
-"Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 
+" Plug 'HerringtonDarkholme/yats.vim' " TS Syntax
 
-Plug 'HerringtonDarkholme/yats.vim' " TS Syntax
-
-call plug#end()
+" call plug#end()
 
 set clipboard=unnamedplus
 
