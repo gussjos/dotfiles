@@ -118,24 +118,25 @@ source ~/.profile
 #
 
 # CLI related
-alias oc="zsh ~/Downloads/oc/oc"
+alias oc="zsh ~/shell-scripts/oc"
 alias cl="clear"
 alias l="exa --long"
 alias vzsh="vim ~/.zshrc"
 
 alias dcup="docker-compose up"
-alias cat="batcat"
+#alias cat="batcat"
 alias rmk='zsh ~/scripts/kill_and_rm_docker_containers.sh'
 alias na='nautilus .'
 
 alias jln='jupyter lab ~/nutrient-counter'
-alias sauce='source ~/.zshrc'
+alias szsh='source ~/.zshrc'
 
 # Stena related aliases
 alias c="z"
 alias ct="cd ~/stena-tmi/tmi-fuel-opt/"
 alias ctt="cd ~/stena-tmi/tmi-fuel-opt-tools/"
 alias cg="cd ~/stena-tmi/tmi-fuel-opt-gui/"
+alias ca="cd ~/stena-tmi/airflow-data-pipelines/"
 alias c2="cd ~/stena-tmi/tmi-fuel-opt-2/"
 alias cc="code ."
 alias reb="docker restart tmi-fuel-opt_tmi-fuel-opt_1 | grep opt_1"
@@ -201,7 +202,7 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
-xrandr --output HDMI-0 --mode 3440x1440 --rate 100 
+#xrandr --output HDMI-0 --mode 3440x1440 --rate 100 
 conda activate stena
 #neofetch
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=off
