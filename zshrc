@@ -1,10 +1,3 @@
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
-
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 # export PATH="/home/gussjo/miniconda3/bin:$PATH"  # commented out by conda initialize  # commented out by conda initialize
@@ -118,42 +111,24 @@ source ~/.profile
 #
 
 # CLI related
-alias oc="zsh ~/shell-scripts/oc"
 alias cl="clear"
 alias l="exa --long"
-alias vzsh="vim ~/.zshrc"
+alias nvzm="vim ~/.zshrc"
 
 alias dcup="docker-compose up"
-#alias cat="batcat"
-alias rmk='zsh ~/scripts/kill_and_rm_docker_containers.sh'
-alias na='nautilus .'
+alias rmk='zsh ~/scripts/rmk.sh'
+#alias rmk='docker kill $(docker ps -q)'
 
-alias jln='jupyter lab ~/nutrient-counter'
 alias szsh='source ~/.zshrc'
 
 # Stena related aliases
-alias c="z"
 alias ct="cd ~/stena-tmi/tmi-fuel-opt/"
-alias ctt="cd ~/stena-tmi/tmi-fuel-opt-tools/"
 alias cg="cd ~/stena-tmi/tmi-fuel-opt-gui/"
-alias ca="cd ~/stena-tmi/airflow-data-pipelines/"
-alias c2="cd ~/stena-tmi/tmi-fuel-opt-2/"
-alias cc="code ."
 alias reb="docker restart tmi-fuel-opt_tmi-fuel-opt_1 | grep opt_1"
 alias open="nautilus ."
 
-# Tmux binds
-alias tmls="tmux ls"
-alias tma="tmux attach -t"
-alias tmb="cat ~/misc/tmux-binds"
-alias tmbg="cat ~/misc/tmux-binds | grep"
-alias tmd"tmux detach"
-
-tmux bind-key x kill-pane
-tmux bind-key h resize-pane -L 10
-tmux bind-key j resize-pane -D 10
-tmux bind-key k resize-pane -U 10
-tmux bind-key l resize-pane -R 10
+# Alacritty
+alias at="alacritty-themes"
 
 # Git related
 alias gau="ga -u"
@@ -165,10 +140,7 @@ alias dlp="zsh ~/scripts/dlp.sh"
 alias dlpa="zsh ~/scripts/dlpa.sh"
 
 alias opc="zsh ~/scripts/openconnect.sh"
-alias mvw="zsh ~/shell-scripts/mv_windows_on_startup.sh"
-
-# Docker
-alias dpa="docker ps -a"
+alias mvw="zsh ~/scripts/mvw.sh"
 
 # Kubectl
 alias kcnt="kcn fuelopt-test"
@@ -176,6 +148,7 @@ alias kcnp="kcn fuelopt-prod"
 
 # Neovim
 alias vim="nvim"
+alias nv1m="z nvim && vim init.vim"
 
 # tmuxp
 export DISABLE_AUTO_TITLE='true'
@@ -184,6 +157,12 @@ export DISABLE_AUTO_TITLE='true'
 bindkey -v
 bindkey "^R" history-incremental-search-backward
 
+# Some tmux stuff, should this even be here?
+tmux bind-key x kill-pane
+tmux bind-key h resize-pane -L 10
+tmux bind-key j resize-pane -D 10
+tmux bind-key k resize-pane -U 10
+tmux bind-key l resize-pane -R 10
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
