@@ -116,8 +116,8 @@ alias l="exa --long"
 alias nvzm="vim ~/.zshrc"
 
 alias dcup="docker-compose up"
-alias rmk='zsh ~/scripts/rmk.sh'
-#alias rmk='docker kill $(docker ps -q)'
+#alias rmk='zsh ~/scripts/rmk.sh'
+alias rmk='docker kill $(docker ps -q) && docker rm $(docker ps -q)'
 
 alias szsh='source ~/.zshrc'
 

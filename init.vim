@@ -16,6 +16,7 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.2' }
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'pineapplegiant/spaceduck', { 'branch': 'main' } " color scheme
+Plug 'folke/tokyonight.nvim', { 'branch': 'main' } " color scheme
 
 call plug#end()
 set encoding=UTF-8
@@ -23,10 +24,11 @@ set encoding=UTF-8
 if (has('nvim'))
   let $NVIM_TUI_ENABLE_TRUE_COLOR = 1
 endif
-let g:material_terminal_italics = 1
-"let g:material_theme_style = 'default' | 'palenight' | 'ocean' | 'lighter' | 'darker' | 'default-community' | 'palenight-community' | 'ocean-community' | 'lighter-community' | 'darker-community'
-let g:material_theme_style = 'palenight'
-colorscheme material
+"let g:material_terminal_italics = 1
+""let g:material_theme_style = 'default' | 'palenight' | 'ocean' | 'lighter' | 'darker' | 'default-community' | 'palenight-community' | 'ocean-community' | 'lighter-community' | 'darker-community'
+"let g:material_theme_style = 'default'
+colorscheme tokyonight-storm
+
 
 " Quick window switching
 nmap <C-h> <C-w>h
@@ -53,7 +55,7 @@ let g:coc_global_extensions = [
   \ 'coc-eslint',
   \ 'coc-prettier',
   \ 'coc-json',
-  \ 'coc-jedi',
+  \ 'coc-pyright',
   \ 'coc-tsserver',
   \ ]
 
