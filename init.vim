@@ -17,6 +17,7 @@ Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.2' }
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'pineapplegiant/spaceduck', { 'branch': 'main' } " color scheme
 Plug 'folke/tokyonight.nvim', { 'branch': 'main' } " color scheme
+"Plug 'bluz71/vim-nightfly-colors', { 'as': 'nightfly' }
 
 call plug#end()
 set encoding=UTF-8
@@ -28,7 +29,9 @@ endif
 ""let g:material_theme_style = 'default' | 'palenight' | 'ocean' | 'lighter' | 'darker' | 'default-community' | 'palenight-community' | 'ocean-community' | 'lighter-community' | 'darker-community'
 "let g:material_theme_style = 'default'
 colorscheme tokyonight-storm
+"colorscheme nightfly
 
+let g:python_highlight_all = 1
 
 " Quick window switching
 nmap <C-h> <C-w>h

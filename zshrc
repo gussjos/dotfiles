@@ -109,6 +109,9 @@ source ~/.profile
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
+#
+
+alias fucking="sudo"
 
 # CLI related
 alias cl="clear"
@@ -116,10 +119,13 @@ alias l="exa --long"
 alias nvzm="vim ~/.zshrc"
 
 alias dcup="docker-compose up"
+alias dcdn="docker-compose down"
+alias drs="sudo systemctl restart docker.socket docker.service"
+alias dc="docker-compose"
 #alias rmk='zsh ~/scripts/rmk.sh'
 alias rmk='docker kill $(docker ps -q) && docker rm $(docker ps -q)'
 
-alias szsh='source ~/.zshrc'
+alias vzsh='source ~/.zshrc'
 
 # Stena related aliases
 alias ct="cd ~/stena-tmi/tmi-fuel-opt/"
@@ -182,7 +188,7 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 #xrandr --output HDMI-0 --mode 3440x1440 --rate 100 
-conda activate stena
+conda activate py2
 #neofetch
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=off
 #  working hyper version : 3.2.3 # 13 jan 2023
