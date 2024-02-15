@@ -111,7 +111,8 @@ source ~/.profile
 #
 #
 
-alias fucking="sudo"
+alias hgr="history | grep"
+alias klb="ksp && k logs $backend -f --tail 50"
 
 # CLI related
 alias cl="clear"
