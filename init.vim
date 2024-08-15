@@ -1,6 +1,5 @@
 syntax on
 set number relativenumber
-set termguicolors
 
 call plug#begin('~/.vim/plugged')
 
@@ -17,6 +16,7 @@ Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.2' }
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'pineapplegiant/spaceduck', { 'branch': 'main' } " color scheme
 Plug 'folke/tokyonight.nvim', { 'branch': 'main' } " color scheme
+Plug 'CopilotC-Nvim/CopilotChat.nvim', { 'branch': 'canary' }
 "Plug 'bluz71/vim-nightfly-colors', { 'as': 'nightfly' }
 
 call plug#end()
@@ -28,8 +28,9 @@ endif
 "let g:material_terminal_italics = 1
 ""let g:material_theme_style = 'default' | 'palenight' | 'ocean' | 'lighter' | 'darker' | 'default-community' | 'palenight-community' | 'ocean-community' | 'lighter-community' | 'darker-community'
 "let g:material_theme_style = 'default'
-colorscheme tokyonight-storm
-"colorscheme nightfly
+"colorscheme tokyonight-storm
+" colorscheme material-theme
+"colorscheme moonlight
 
 let g:python_highlight_all = 1
 
@@ -93,3 +94,4 @@ inoremap <expr> <Tab> pumvisible() ? "\<C-y>\<C-n>" : "\<Tab>"
 " Use Ctrl+J and Ctrl+K to navigate the list of suggestions
 inoremap <expr> <C-j> pumvisible() ? "\<C-n>" : "\<C-j>"
 inoremap <expr> <C-k> pumvisible() ? "\<C-p>" : "\<C-k>"
+

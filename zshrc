@@ -110,6 +110,9 @@ source ~/.profile
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
 #
+#
+alias dlf="docker logs tmi-fuel-opt -f --tail 100"
+alias gcr="git checkout feature/refactor-statem"
 
 alias hgr="history | grep"
 alias klb="ksp && k logs $backend -f --tail 50"
@@ -189,7 +192,7 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 #xrandr --output HDMI-0 --mode 3440x1440 --rate 100 
-conda activate py2
+conda activate fuelopt
 #neofetch
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=off
 #  working hyper version : 3.2.3 # 13 jan 2023
