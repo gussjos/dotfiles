@@ -2,6 +2,17 @@ window:
   opacity: 1
 font:
   size: 10.0
+    # Font configuration
+font:
+  # Normal (roman) font face
+  normal:
+    # Font family
+    #
+    # Default:
+    #   - (macOS) Menlo
+    #   - (Linux/BSD) monospace
+    #   - (Windows) Consolas
+    family: BitstromWeraNerdFont
 colors:
   name: Ivory Light
   author: Baskerville
@@ -33,3 +44,4 @@ colors:
 theme: Baskerville-ivorylight
 import:
   - ~/.config/alacritty/themes/themes/{theme}.yaml
+
