@@ -1,0 +1,17 @@
+[
+  {
+    "context": "Workspace",
+    "bindings": {}
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-w": "pane::CloseActiveItem",
+      "ctrl-e": "file_finder::Toggle",
+      "ctrl-h": "editor::TabPrev",
+      "alt-c": "assistant::ToggleFocus",
+      "alt-d": "terminal_panel::ToggleFocus",
+      "alt-a": "terminal_panel::ToggleFocus"
+    }
+  }
+]
