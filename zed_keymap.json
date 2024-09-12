@@ -9,9 +9,32 @@
       "ctrl-w": "pane::CloseActiveItem",
       "ctrl-e": "file_finder::Toggle",
       "ctrl-h": "editor::TabPrev",
-      "alt-c": "assistant::ToggleFocus",
       "alt-d": "terminal_panel::ToggleFocus",
+      "ctrl-n": "workspace::NewFile",
+      "alt-c": "assistant::ToggleFocus",
+      "alt-h": "pane::ActivatePrevItem",
+      "alt-l": "pane::ActivateNextItem",
+      "ctrl-t": "project_panel::ToggleFocus",
+      "ctrl-F": "pane::DeploySearch"
+    }
+  },
+  {
+    "context": "ContextEditor > Editor",
+    "bindings": {
+      "ctrl-c": "assistant::QuoteSelection",
+      "alt-a": "assistant::ToggleFocus"
+    }
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
       "alt-a": "terminal_panel::ToggleFocus"
+    }
+  },
+  {
+    "context": "Project Panel",
+    "bindings": {
+      "alt-a": "project_panel::ToggleFocus"
     }
   }
 ]
